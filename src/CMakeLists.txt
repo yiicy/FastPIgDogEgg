@@ -1,7 +1,5 @@
 set(FPDE_CL_ROOT ${FPDE_SRCS}/cl)
 set(FPDE_NEON_ROOT ${FPDE_SRCS}/neon)
-set(CMAKE_SHARED_LINKER_FLAGS "${CMAKE_SHARED_LINKER_FLAGS} -Wl,--gc-sections")
-set(MAKE_STATIC_LINKER_FLAGS "${MAKE_STATIC_LINKER_FLAGS} -Wl,--gc-sections")
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fno-rtti -fno-exceptions")
 
 aux_source_directory(${FPDE_NEON_ROOT} NEON_SRCS)
